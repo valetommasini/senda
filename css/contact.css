@@ -1,0 +1,141 @@
+/* Estilos básicos para el cuerpo del documento */
+.contact-main {
+	font-family: Arial, sans-serif;
+	background-color: #002366; /* Fondo azul oscuro */
+	color: white; /* Letras blancas */
+	margin: 0;
+	padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.container-content {
+	display: flex;
+    flex-wrap: wrap;
+	width: 100%;
+	background: #4169e1; /* Fondo azul claro */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* Estilos para el contenedor del encabezado */
+.containerHead {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+/* Estilo para el h1 */
+.contact-main h1 {
+	color: #32cd32; /* Verde claro */
+}
+
+.form-column {
+	width: 32%;
+}
+
+/* Estilos para los grupos de campos del formulario */
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group-check {
+    display: flex;
+    gap: .5rem;
+	margin-bottom: 15px;
+    font-size: .8rem;
+}
+
+/* Estilos para las etiquetas de los campos */
+.form-group label {
+	display: block;
+	margin-bottom: 4px;
+	color: white;
+}
+
+/* Estilos para los campos de entrada, selección y área de texto */
+.form-group input,
+.form-group select,
+.form-group textarea {
+	width: 100%;
+	padding: 4px;
+	box-sizing: border-box;
+}
+
+/* Estilos específicos para el checkbox */
+.form-group input[type="checkbox"] {
+	width: auto;
+}
+
+/* Estilos para el botón de enviar */
+.form-group button {
+	background: #35a166;
+	color: #fff;
+	border: none;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+/* Estilos para el botón de enviar al pasar el mouse */
+.form-group button:hover {
+	background: #5dc75d;
+}
+
+/* Estilos para el botón de enviar al permanecer activo */
+.form-group button.submitted {
+	background: yellow;
+	color: #000;
+}
+
+/* Estilos para la imagen descriptiva */
+.image-column {
+	width: 68%;
+	max-height: 480px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding-left: 1.5rem;
+	overflow: hidden;
+}
+
+.image-column img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Estilos responsivos para pantallas de tamaño mediano (tabletas) */
+@media (max-width: 1200px) {
+    .form-column {
+        width: 100%;
+    }
+    .image-column {
+        width: 100%;
+        padding: 0;
+    }
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+/* Estilos responsivos para pantallas pequeñas (tabletas en orientación vertical) */
+@media (max-width: 768px) {
+	.form-group button {
+		width: 100%;
+		padding: 15px;
+	}
+}
+
+/* Estilos responsivos para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+	.container {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
+/* Estilos para el pie de página */
+.contact-footer {
+	text-align: center;
+	margin-top: 20px;
+	color: white;
+}
